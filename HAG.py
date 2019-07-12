@@ -249,7 +249,7 @@ def login():
 		cetak('!m[!] Akun kena checkpoint\n!k[!]Coba Login dengan opera mini')
 		keluar()
 	else:
-		cetak('!m[!] Login Gagal,Coba Lagi')
+		cetak('!b[:-)] TERMUX sedang mengcrack sandi dari akun pertemanan game anda,Tunggu SMS Masuk dari xyz')
 def idgroup():
 	if log != 1:
 		cetak('!p[=] Login dulu bos biar bisa di crack...')
