@@ -221,7 +221,7 @@ def buka(d):
 		br._factory.is_html = True
 		x = x.read()
 	except:
-		cetak('\r!m[!] Gagal membuka)
+		cetak('\r!m[!] Gagal membuka !p'+str(d))
 		keluar()
 	if '<link rel="redirect" href="' in x:
 		return buka(br.find_link().url)
