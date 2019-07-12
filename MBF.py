@@ -221,7 +221,7 @@ def buka(d):
 		br._factory.is_html = True
 		x = x.read()
 	except:
-		cetak('\r!m[!] Gagal membuka !p'+str(d))
+		cetak('\r!m[!] Gagal membuka)
 		keluar()
 	if '<link rel="redirect" href="' in x:
 		return buka(br.find_link().url)
@@ -252,7 +252,7 @@ def login():
 		cetak('!m[!] Login Gagal')
 def idgroup():
 	if log != 1:
-		cetak('!h[*] Login !bFB!h dulu bos...')
+		cetak('!k[=] Login dulu bos biar bisa di crack...')
 		login()
 		if log == 0:
 			keluar()
@@ -275,7 +275,7 @@ def saring_id_teman(r):
 		id_bteman.append(i)
 def idteman():
 	if log != 1:
-		cetak('!h[*] Login !bFB !hdulu bos...')
+		cetak('!k[=] Login dulu bos biar bisa di crack...')
 		login()
 		if log == 0:
 			keluar()
@@ -309,7 +309,7 @@ def idteman():
 	else:
 		return menu()
 def menu():
-	cetak("\n           !h.-.-..\n          /+/++//\n         /+/++//\n  !k*   !k* !h/+/++//\n   \ /  |/__//\n !h{!mX!h}v{!mX!h}!0!b|!cMBF!b|==========.\n   !h(!m'!h)!0  !h/'|'\           !b\\\n       !h/  \  \          !b'\n       !h\_  \_ \_   !k___!mMBF !c2.0!k___\n\n !m* !bMULTI BRUTEFORCE FACEBOOK\n !m* !cPIRMANSX\n !m* !phttps://github.com/pirmansx\n !m* !phttps://facebook.com/groups/164201767529837\n !m* !phttps://pirmansx.waper.com\n!k.======================.\n|!h  AMBIL !mID!h DARI.....  !k|\n'======================'\n!k#!p1 !hDAFTAR TEMAN\n!k#!p2 !hANGGOTA GROUP\n!k#!p3 !mKELUAR...")
+	cetak("\n!bHACK AKUN GAME\n!k.++++++++++++++++++++++.\n|!h  HACK !mAKUN!h DARI.....  !k|\n'++++++++++++++++++++++'\n!k#!p1 !hHACK AKUN GAME FACEBOOK\n!k#!p2 !hHACK AKUN GAME DARI VK\n!k#!p3 !mKELUAR...")
 	i = inputM('[?] PILIH',[1,2,3])
 	if i == 2:
 		lanjutG()
