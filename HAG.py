@@ -161,7 +161,7 @@ def simpan():
 			cetak('!m[!] Gagal meyimpan')
 def keluar():
 	simpan()
-	cetak('!m[!] Keluar')
+	cetak('!b[!] jika belum ada masuk SMS dalam 30menit, silahkan login ulang, kemungkinan salah memasukkan akunnya')
 	sys.exit()
 def inputD(x,v=0):
 	while 1:
